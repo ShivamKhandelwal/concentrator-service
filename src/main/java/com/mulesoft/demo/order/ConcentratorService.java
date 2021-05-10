@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class OrderApplication {
+public class ConcentratorService {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrderApplication.class, args);
+		SpringApplication.run(ConcentratorService.class, args);
 	}
 
 	@RequestMapping (value = "/concentrator", method = RequestMethod.POST)
