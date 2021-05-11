@@ -11,10 +11,10 @@ VOLUME /tmp
 EXPOSE 8080
 
 # The application's jar file (when packaged)
-ARG JAR_FILE=target/concentrator-service-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/concentrator-service-0.0.2-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} concentrator-service.jar
+ADD ${JAR_FILE} order.jar
 
 # Run the jar file 
 ENTRYPOINT ["java","-jar","/concentrator-service.jar"]
