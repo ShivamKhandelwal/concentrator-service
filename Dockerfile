@@ -14,7 +14,7 @@ EXPOSE 8080
 ARG JAR_FILE=target/concentrator-service-0.0.2-SNAPSHOT.jar
 
 # Add the application's jar to the container
-ADD ${JAR_FILE} order.jar
+ADD ${JAR_FILE} concentrator-service.jar
 
 # Run the jar file 
 ENTRYPOINT ["java","-jar","/concentrator-service.jar"]
